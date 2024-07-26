@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Righteous&family=Shadows+Into+Light&family=Yanone+Kaffeesatz:wght@300&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+/*    overflow: hidden;  */
+/*    overflow-x: hidden;*/
+}
+
+#main{
+    height: auto;
+    width: 100vw;
+    overflow: hidden;  
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ============ card ============ */
+.card{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    position: relative;
+}
+
+.card img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* ============ container ============ */
+.container{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* ============ container ============ */
+.menu{
+    height: 10%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* ----- left menu ----- */
+.leftMenu{
+    height: 100%;
+    width: auto;
+    display: flex;
+    align-items: center;
+}
+
+.leftMenu img{
+    height: 100%;
+    width: auto;
+    background: #E53130;
+    padding: 25px;
+    box-sizing: border-box;
+    z-index: 1;
+    
+}
+
+.itensSocial{
+    height: 100%;
+    width: auto;
+    background: #fff;
+    padding-left: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -100%;
+    visibility: hidden;
+    opacity: 0;
+    transition: 1s;
+}
+
+.leftMenu:hover img ~ .itensSocial{
+    margin-left: 0;
+    visibility: visible;
+    opacity: 1;
+    transition: .8s;
+}
+
+.itensSocial i{
+    color: #a8a8a8;
+    font-size: 20px;
+    margin-right: 50px;
+    
+}
+
+/* ----- right menu ----- */
+.rightMenu{
+    height: 100%;
+    width: auto;
+    display: flex;
+    align-items: center;
+}
+
+.itensMenu{
+    font-size: 18px;
+    color: #a8a8a8;
+    margin-right: 50px;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+.itensMenu:nth-child(1){
+    color: #000;
+}
+
+/* ============ compra ============ */
+.buy{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;  
+    padding-right: 110px;
+    box-sizing: border-box;
+}
+
+.containerPrice{
+    height: auto;
+    width: auto;
+    display: flex;
+    text-align: right;
+    flex-direction: column;
+    margin-right: 25px;
+    
+}
+
+.price{
+    color: #000;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.platform{
+    color: #a8a8a8;
+    font-size: 14px;
+}
+
+.buy img{
+    height: 200px;
+    width: auto;   
+    transition: .5s;
+}
+
+.buy img:hover{
+    box-shadow: 0px 5px 50px 3px #098be8;
+    transition: .5s;
+}
+
+/* ============ trailer ============ */
+.trailer{
+    height: 40%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* ----- video ----- */
+.video{
+    height: 240px;
+    width: 500px;
+    display: flex;
+}
+
+.containerBtns{
+    height: 100%;
+    width: 110px;
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    box-sizing: border-box;
+}
+
+.number{
+    font-size: 25px;
+    color: #a8a8a8;
+    font-family: 'Righteous', arial;
+    margin-bottom: 70px;
+}
+
+#prev, #next{
+    height: 30px;
+    width: 30px;
+    font-size: 20px;
+    margin-bottom: 10px;
+    transition: .1s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 180px;
+    left: 30px;
+    z-index: 10;
+    
+}
+
+#next{
+    bottom: 130px;
+}
+
+#prev:active, #next:active{
+    background: #a8a8a8;
+    transition: .1s;
+    cursor: pointer;
+}
+
+iframe{
+    height: 100%;
+    width: 100%;
+}
+
+/* ----- botão jogar agora ----- */
+.containerBtnPlayNow{
+    height: auto;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 100px;
+    box-sizing: border-box;
+}
+
+.btnPlayNow{
+    height: 65px;
+    width: auto;
+    padding-left: 80px;
+    padding-right: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 20px;
+    font-family: 'Yanone Kaffeesatz', arial;
+    background: #E53130;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
